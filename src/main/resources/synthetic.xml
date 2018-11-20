@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<synthetic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xmlns="http://www.xebialabs.com/deployit/synthetic" xsi:schemaLocation="http://www.xebialabs.com/deployit/synthetic synthetic.xsd">
+
+
+  <type type="spinnaker.Server" extends="configuration.HttpConnection" label="Spinnaker server">
+    <property name="scriptLocation" default="xlr/spinnaker/check_connection.py" hidden="true"/>
+  </type>
+
+</synthetic>
+
