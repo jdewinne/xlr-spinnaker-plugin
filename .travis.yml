@@ -1,1 +1,12 @@
 language: java
+deploy:
+  provider: releases
+  api_key:
+    secure: d+fuYHSWNAuTJp60I4fvJEoT9yM/Em3DfjghWt5KY4xaWEzCtMmtGmMMASOtNfdWzzt4/74eQ39t5zjU12WywrbWJtXb+h0gfKk5m+POzWu+7z7LsJ6bizZ9SRwX5lxVm45P2oYQmMD213KEBne5ZfsZNiGP6fnxzSY7RQoGCJmt/XDPEMSdBpIj8pfUvk0Yd70ucFjiodC1DaXzH9cpyTXxIOUzVwwgt7q3laM/emoZGnUbdShGSs2SaD1tQAoXPaWllL8Ea++GB2Eak3ZyvLYh8asgp6ict/O4dxBVa1aXufWQIjybDzI/IQN97jJOtwb65nyQhow87yKXojMEU9OmgVti+Txk9a8R/VU1SuMWGszV6mY2A7Wov59fLnkp3Gvzddyptp+ICPTz2JfXGo07c9DcdO0ecXh1O4aXNk8BK/92drfSZoTVAsfkZOdLtbCmgNF9dHwvZJsG6afi8VWd7G8RmWUVGYezSAxbrW0aPdUqr3NslJc3rUpN9B5hNunX1vV1B0XrjE546BAiZ5FWD90UE8KyL3CKSZMgXDLmcne51QT7hq9CMzoSf9m3m0H9r3MwGIT1hg+QFYY5t4hfO8FbuL2tQ/8MpE2xn14DhETxq18eh2EmdXSRwKi933ektUHdh8ys8NhF9wm+jVlMubgtvkQYwf+YL5bFoLY=
+  file_glob: true
+  file: build/libs/*
+  skip_cleanup: true
+  on:
+    all_branches: true
+    tags: true
+    repo: jdewinne/xlr-spinnaker-plugin
